@@ -1,0 +1,110 @@
+@keyframes zoom {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    z-index: 90000;
+    animation-name: animate-block;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    display: flex;
+}
+.image-birthday-cake {
+    width:  80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+}
+.btn-container {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    font-size: 20;
+    color: white;
+    margin: 20px auto 0px auto;
+}
+#btn-1 {
+    background-color: rgb(110, 22, 22);
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    border: navajowhite;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    animation-name: animate-block;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+#btn-2 {
+    background-color: rgb(110, 22, 22);
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    border: navajowhite;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    display: none;
+    animation-name: animate-block;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+#video-tet {
+    width:  100%;
+    height: 100%;
+    margin: auto;
+    z-index: 90000;
+}
+.video-container {
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    animation-name: animate-block;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    
+    /* display: none; */
+    transition-duration: 500ms;
+transition-property: margin-right;
+}
+
+#balloon-container .merrywrap #canvas #c  {
+    transition: opacity 2s linear;
+}
+
+
+@keyframes animate-block {
+    0% {
+        transform: rotateY(90deg) rotateX(90deg);
+        opacity: 0;
+    }
+    10% {
+        transform: rotateY(90deg) rotateX(90deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    30% {
+        transform: rotateY(0) rotateX(0);
+        opacity: 1;
+    }
+    60% {
+        transform: rotateY(0) rotateX(0);
+        opacity: 1;
+        transform-origin: 100% 100%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
