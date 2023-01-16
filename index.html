@@ -618,9 +618,9 @@
 
             opts = {
                 strings: ['HAPPY', 'BIRTHDAY!', 'CHỊ PHƯƠNG'],
-                charSize: 100,
-                charSpacing: 100,
-                lineHeight: 100,
+                charSize: w/12,
+                charSpacing: w/12,
+                lineHeight: w/12,
 
                 cx: w / 2,
                 cy: h / 2,
@@ -673,7 +673,7 @@
             this.x = x;
             this.y = y;
 
-            this.dx = -ctx.measureText(char).width / 2;
+            this.dx = -ctx.measureText(char).width / 4;
             this.dy = +opts.charSize / 2;
 
             this.fireworkDy = this.y - hh;
@@ -1361,12 +1361,12 @@
                 w = 255; h = 155;
             }
 
-            var ifrm = document.createElement("iframe");
-            ifrm.setAttribute("src", "video.mp4");
-            //ifrm.style.width = `${w}px`;
-            //ifrm.style.height = `${h}px`;
-            ifrm.style.border = 'none';
-            document.querySelector('#video').appendChild(ifrm);
+            // var ifrm = document.createElement("iframe");
+            // ifrm.setAttribute("src", "video.mp4");
+            // ifrm.style.width = `${w}px`;
+            // ifrm.style.height = `${h}px`;
+            // ifrm.style.border = 'none';
+            // document.querySelector('#video').appendChild(ifrm);
         }
     </script>
 
@@ -1413,9 +1413,6 @@ animation: float ${dur}s ease-in infinite
         createBalloons(30)
     });
 
-    window.addEventListener("click", () => {
-        removeBalloons();
-    });
 
 </script>
 
