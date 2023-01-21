@@ -107,4 +107,14 @@ transition-property: margin-right;
     }
 }
 
+@media (max-width: 1000px) {
+    .image-birthday-cake {
+        width:  80%;
+        height: 40%;
+        margin: auto;
+        display: flex;
+        margin-top: 150px;
+    }
+}
+
 
