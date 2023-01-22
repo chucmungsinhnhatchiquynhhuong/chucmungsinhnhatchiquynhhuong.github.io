@@ -1285,6 +1285,7 @@
             showBackground();
             function showBtn2() {
                 audio.play();
+                nhac_birthday.play();
                 btn1.style.display = 'none';
                 btn2.style.display = 'flex';
             }
@@ -1322,7 +1323,7 @@
                 setTimeout(hideBackground, 1000)
                 image.style.display = "none";
                 video.style.display = "block";
-                setTimeout(()=>{document.getElementById("video-tet").play()}, 3000);
+                document.getElementById("video-tet").play();
             }
             function openBox() {
                 if (step === 1) {
